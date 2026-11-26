@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ENT 302 &middot; MCQ Revision Bank</title>
+<meta name="description" content="Multiple-choice revision questions for ENT 302, drawn from the six lecture slide decks.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Centre for Entrepreneurship &amp; Small Enterprise Development</p>
+    <h1>ENT 302 &middot; MCQ Revision Bank</h1>
+    <p class="sub"><span id="total-count">0</span> questions drawn from the six lecture decks. Pick a bank, read the question, then click <em>Show answer</em>.</p>
+  </div>
+</header>
+
+<nav class="toolbar" id="toolbar">
+  <div class="wrap">
+    <div class="banks" id="banks" role="tablist" aria-label="Question banks"></div>
+    <div class="controls">
+      <label class="field">
+        <span class="field-label">Lecture</span>
+        <select id="lecture-filter">
+          <option value="all">All lectures</option>
+        </select>
+      </label>
+      <label class="field grow">
+        <span class="field-label">Search</span>
+        <input type="search" id="search" placeholder="e.g. bootstrapping, Cantillon, niche" autocomplete="off">
+      </label>
+      <div class="field btns">
+        <button type="button" id="reveal-all" class="btn">Show all answers</button>
+        <button type="button" id="hide-all" class="btn ghost">Hide all</button>
+      </div>
+    </div>
+    <p class="status" id="status"></p>
+  </div>
+</nav>
+
+<main class="wrap">
+  <ol class="qlist" id="qlist"></ol>
+  <p class="empty" id="empty" hidden>No questions match that search. Try a different word.</p>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Questions generated from the ENT 302 lecture slides (Lectures 1&ndash;6). Answers follow the wording of the slides &mdash; check against the decks before using any item in a live examination.</p>
+  </div>
+</footer>
+
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
